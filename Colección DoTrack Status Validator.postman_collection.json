@@ -1,0 +1,205 @@
+{
+	"info": {
+		"_postman_id": "b58c7b17-f6a6-4fa7-8c4a-07d1d0ba1e98",
+		"name": "Colección DoTrack Status Validator",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26034486"
+	},
+	"item": [
+		{
+			"name": "Constructor de Contrato",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic dTBmMnc5dnhsNTpNMGFnSUFqRWlNWGsyUFNGTjJKU1NzLUltSWUtTDViTEtINWdQRExoT204",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"input\": {\r\n      \"abi\": [\r\n        {\r\n          \"inputs\": [],\r\n          \"stateMutability\": \"nonpayable\",\r\n          \"type\": \"constructor\"\r\n        },\r\n        {\r\n          \"anonymous\": false,\r\n          \"inputs\": [\r\n            {\r\n              \"indexed\": false,\r\n              \"internalType\": \"uint256\",\r\n              \"name\": \"POID\",\r\n              \"type\": \"uint256\"\r\n            },\r\n            {\r\n              \"indexed\": false,\r\n              \"internalType\": \"uint256\",\r\n              \"name\": \"poType\",\r\n              \"type\": \"uint256\"\r\n            },\r\n            {\r\n              \"indexed\": false,\r\n              \"internalType\": \"enum DoTrackStatusValidator.Status\",\r\n              \"name\": \"status\",\r\n              \"type\": \"uint8\"\r\n            },\r\n            {\r\n              \"indexed\": false,\r\n              \"internalType\": \"string\",\r\n              \"name\": \"metadata\",\r\n              \"type\": \"string\"\r\n            },\r\n            {\r\n              \"indexed\": false,\r\n              \"internalType\": \"address\",\r\n              \"name\": \"author\",\r\n              \"type\": \"address\"\r\n            }\r\n          ],\r\n          \"name\": \"RegisteredStep\",\r\n          \"type\": \"event\"\r\n        },\r\n        {\r\n          \"inputs\": [\r\n            {\r\n              \"internalType\": \"uint256\",\r\n              \"name\": \"\",\r\n              \"type\": \"uint256\"\r\n            },\r\n            {\r\n              \"internalType\": \"uint256\",\r\n              \"name\": \"\",\r\n              \"type\": \"uint256\"\r\n            }\r\n          ],\r\n          \"name\": \"ParameterValidator\",\r\n          \"outputs\": [\r\n            {\r\n              \"internalType\": \"enum DoTrackStatusValidator.Status\",\r\n              \"name\": \"status\",\r\n              \"type\": \"uint8\"\r\n            },\r\n            {\r\n              \"internalType\": \"string\",\r\n              \"name\": \"metadata\",\r\n              \"type\": \"string\"\r\n            }\r\n          ],\r\n          \"stateMutability\": \"view\",\r\n          \"type\": \"function\"\r\n        },\r\n        {\r\n          \"inputs\": [\r\n            {\r\n              \"internalType\": \"address\",\r\n              \"name\": \"userWallet\",\r\n              \"type\": \"address\"\r\n            },\r\n            {\r\n              \"internalType\": \"uint256\",\r\n              \"name\": \"POID\",\r\n              \"type\": \"uint256\"\r\n            }\r\n          ],\r\n          \"name\": \"RegisterPO\",\r\n          \"outputs\": [\r\n            {\r\n              \"internalType\": \"bool\",\r\n              \"name\": \"success\",\r\n              \"type\": \"bool\"\r\n            }\r\n          ],\r\n          \"stateMutability\": \"nonpayable\",\r\n          \"type\": \"function\"\r\n        },\r\n        {\r\n          \"inputs\": [\r\n            {\r\n              \"internalType\": \"address\",\r\n              \"name\": \"userWallet\",\r\n              \"type\": \"address\"\r\n            },\r\n            {\r\n              \"internalType\": \"uint256\",\r\n              \"name\": \"POID\",\r\n              \"type\": \"uint256\"\r\n            },\r\n            {\r\n              \"internalType\": \"string\",\r\n              \"name\": \"metadata\",\r\n              \"type\": \"string\"\r\n            },\r\n            {\r\n              \"internalType\": \"uint256\",\r\n              \"name\": \"poType\",\r\n              \"type\": \"uint256\"\r\n            }\r\n          ],\r\n          \"name\": \"RegisterStep\",\r\n          \"outputs\": [\r\n            {\r\n              \"internalType\": \"bool\",\r\n              \"name\": \"success\",\r\n              \"type\": \"bool\"\r\n            }\r\n          ],\r\n          \"stateMutability\": \"nonpayable\",\r\n          \"type\": \"function\"\r\n        }\r\n      ]\r\n    }\r\n  }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://u0ki1p5w0y-u0v3325p51-connect.us0-aws.kaleido.io/gateways/u0kr8lllu7/?kld-from=0x425c5f3cc4aa065ef5b8671d246244a279d7c6a9&kld-sync=true",
+					"protocol": "https",
+					"host": [
+						"u0ki1p5w0y-u0v3325p51-connect",
+						"us0-aws",
+						"kaleido",
+						"io"
+					],
+					"path": [
+						"gateways",
+						"u0kr8lllu7",
+						""
+					],
+					"query": [
+						{
+							"key": "kld-from",
+							"value": "0x425c5f3cc4aa065ef5b8671d246244a279d7c6a9"
+						},
+						{
+							"key": "kld-sync",
+							"value": "true"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Registrar nueva Orden de Compra",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic dTBmMnc5dnhsNTpNMGFnSUFqRWlNWGsyUFNGTjJKU1NzLUltSWUtTDViTEtINWdQRExoT204",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"POID\": \"#idOrder\",\r\n  \"userWallet\": \"0x425c5f3cc4aa065ef5b8671d246244a279d7c6a9\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://u0ki1p5w0y-u0v3325p51-connect.us0-aws.kaleido.io/gateways/u0kr8lllu7/0xd2fc1c88e0118ba7ae264cc8368c80c251f95272/RegisterPO?kld-from=0x425c5f3cc4aa065ef5b8671d246244a279d7c6a9&kld-sync=true",
+					"protocol": "https",
+					"host": [
+						"u0ki1p5w0y-u0v3325p51-connect",
+						"us0-aws",
+						"kaleido",
+						"io"
+					],
+					"path": [
+						"gateways",
+						"u0kr8lllu7",
+						"0xd2fc1c88e0118ba7ae264cc8368c80c251f95272",
+						"RegisterPO"
+					],
+					"query": [
+						{
+							"key": "kld-from",
+							"value": "0x425c5f3cc4aa065ef5b8671d246244a279d7c6a9"
+						},
+						{
+							"key": "kld-sync",
+							"value": "true"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Validador de Parámetros",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic dTBmMnc5dnhsNTpNMGFnSUFqRWlNWGsyUFNGTjJKU1NzLUltSWUtTDViTEtINWdQRExoT204",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"input\": \"#idOrder\",\r\n  \"input1\": \"#status\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://u0ki1p5w0y-u0v3325p51-connect.us0-aws.kaleido.io/gateways/u0kr8lllu7/0xd2fc1c88e0118ba7ae264cc8368c80c251f95272/ParameterValidator?kld-from=0x425c5f3cc4aa065ef5b8671d246244a279d7c6a9&kld-sync=true",
+					"protocol": "https",
+					"host": [
+						"u0ki1p5w0y-u0v3325p51-connect",
+						"us0-aws",
+						"kaleido",
+						"io"
+					],
+					"path": [
+						"gateways",
+						"u0kr8lllu7",
+						"0xd2fc1c88e0118ba7ae264cc8368c80c251f95272",
+						"ParameterValidator"
+					],
+					"query": [
+						{
+							"key": "kld-from",
+							"value": "0x425c5f3cc4aa065ef5b8671d246244a279d7c6a9"
+						},
+						{
+							"key": "kld-sync",
+							"value": "true"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Registrar nuevo Estado",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic dTBmMnc5dnhsNTpNMGFnSUFqRWlNWGsyUFNGTjJKU1NzLUltSWUtTDViTEtINWdQRExoT204",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"POID\": \"#idOrder\",\r\n  \"metadata\": \"#CIDipfs de json\",\r\n  \"poType\": \"1,2 ó 3\",\r\n  \"userWallet\": \"0x425c5f3cc4aa065ef5b8671d246244a279d7c6a9\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://u0ki1p5w0y-u0v3325p51-connect.us0-aws.kaleido.io/gateways/u0kr8lllu7/0xd2fc1c88e0118ba7ae264cc8368c80c251f95272/RegisterStep?kld-from=0x425c5f3cc4aa065ef5b8671d246244a279d7c6a9&kld-sync=true",
+					"protocol": "https",
+					"host": [
+						"u0ki1p5w0y-u0v3325p51-connect",
+						"us0-aws",
+						"kaleido",
+						"io"
+					],
+					"path": [
+						"gateways",
+						"u0kr8lllu7",
+						"0xd2fc1c88e0118ba7ae264cc8368c80c251f95272",
+						"RegisterStep"
+					],
+					"query": [
+						{
+							"key": "kld-from",
+							"value": "0x425c5f3cc4aa065ef5b8671d246244a279d7c6a9"
+						},
+						{
+							"key": "kld-sync",
+							"value": "true"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
