@@ -5,7 +5,7 @@ async function registerOrder() {
   const options = {
     method: "POST",
     headers: {
-      "Authorization": "Basic dTBmMnc5dnhsNTpNMGFnSUFqRWlNWGsyUFNGTjJKU1NzLUltSWUtTDViTEtINWdQRExoT204",
+      "Authorization": "Basic dTBmMnc5dnh....",
       "Content-Type": "application/json"
     },
     body: JSON.stringify({
